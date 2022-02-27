@@ -1,3 +1,7 @@
+d3.json("samples.json").then(function(data){
+  console.log(data);
+});
+
 function init() {
   // Grab a reference to the dropdown select element
   var selector = d3.select("#selDataset");
@@ -83,7 +87,6 @@ function buildCharts(sample) {
       y: [otu_ids],
       text: [otu_labels],
       type: "bar"
-      orientation: "h"
     }];
     // 9. Create the layout for the bar chart. 
     var barLayout = {
