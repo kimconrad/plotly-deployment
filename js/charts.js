@@ -86,12 +86,12 @@ function buildCharts(sample) {
     var yticks = topTenSamples;
 
     // 8. Create the trace for the bar chart. 
-    var barData = {[
+    var barData = {
       x: [sample_values],
       y: [otu_ids],
       text: [otu_labels],
       type: "bar"
-    ]};
+    };
     // 9. Create the layout for the bar chart. 
     var barLayout = {
      title: "Top Ten Bacteria Cultures Detected",
